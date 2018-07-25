@@ -24,6 +24,10 @@ public class Main {
         log.info("randomNumber => {}", numberGenerator.next());
         log.info("maxNumber => {}", numberGenerator.getMaxNumber());
 
+
+        Game game = context.getBean(Game.class);
+        game.reset();
+
         // Close Context (Container)
         context.close();
     }

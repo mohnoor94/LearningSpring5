@@ -6,4 +6,9 @@
 
     <bean id="numberGenerator" class="com.abukhleif.NumberGeneratorImpl"/>
 
+    <bean id="game" class="com.abukhleif.GameImpl">
+        <!--<constructor-arg ref="numberGenerator"/>-->
+        <property name="numberGenerator" ref="numberGenerator"/>
+    </bean>
+
 </beans>
